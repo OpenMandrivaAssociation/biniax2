@@ -1,6 +1,6 @@
 Name:		biniax2
 Version:	1.30
-Release:	%mkrel 1
+Release:	2
 Summary:	Colour block logic game with original gameplay
 License:	ZLib
 Group:		Games/Puzzles
@@ -31,9 +31,7 @@ down!
 %make
 
 %install
-%__rm -rf %{buildroot}
-
-%__cp %{SOURCE1} LICENSE
+cp %{SOURCE1} LICENSE
 
 %__cat > %{name}.sh <<EOF
 #!/bin/sh
@@ -64,10 +62,7 @@ EOF
 %__install -D -m755 %{name}.sh %{buildroot}%{_gamesbindir}/%{name}
 %__install -D data/graphics/element3.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 %__mkdir_p %{buildroot}%{_gamesdatadir}/%{name}
-%__cp -r data %{buildroot}%{_gamesdatadir}/%{name}/
-
-%clean
-%__rm -rf %{buildroot}
+cp -r data %{buildroot}%{_gamesdatadir}/%{name}/
 
 %files
 %defattr(644,root,root,755)
@@ -76,4 +71,11 @@ EOF
 %{_datadir}/pixmaps/%{name}.png
 %{_datadir}/applications/%{name}.desktop
 %{_gamesdatadir}/%{name}
+
+
+
+%changelog
+* Sat Mar 24 2012 Andrey Bondrov <abondrov@mandriva.org> 1.30-1mdv2011.0
++ Revision: 786534
+- imported package biniax2
 
