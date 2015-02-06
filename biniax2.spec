@@ -1,6 +1,6 @@
 Name:		biniax2
 Version:	1.30
-Release:	2
+Release:	3
 Summary:	Colour block logic game with original gameplay
 License:	ZLib
 Group:		Games/Puzzles
