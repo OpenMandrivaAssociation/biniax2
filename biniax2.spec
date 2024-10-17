@@ -4,7 +4,7 @@ Release:	3
 Summary:	Colour block logic game with original gameplay
 License:	ZLib
 Group:		Games/Puzzles
-URL:		http://biniax.com
+URL:		https://biniax.com
 Source:		http://mordred.dir.bg/biniax/%{name}-%{version}-fullsrc.tar.gz
 Source1:	%{name}-LICENSE
 BuildRequires:	SDL-devel
