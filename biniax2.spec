@@ -7,6 +7,7 @@ Group:		Games/Puzzles
 URL:		https://biniax.com
 Source:		http://mordred.dir.bg/biniax/%{name}-%{version}-fullsrc.tar.gz
 Source1:	%{name}-LICENSE
+BuildRequires:	make
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_image-devel
 BuildRequires:	SDL_mixer-devel
